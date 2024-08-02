@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeACake Studios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- <div class="logo">
+                <img src="img/logo.png" alt="Логотип Студии">
+            </div> -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Добро пожаловать в MakeACake Studios!</h1>
+            <p>Студия графического дизайна, программирования и YouTube менеджмнета.</p>
+            <!-- <a href="#contact" class="btn">Связаться с нами</a> -->
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Наша студия занимается созданием интересного, красивого и качественного контента в разных направлениях.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Проекты</h2>
+            <h4>Больше наших проектов <a href="projects.html">тут</a>.</h4>
+            <div class="projects-gallery">
+                <div class="projects-item">
+                    <a href="projects.html#smpl">
+                        <img src="img/project1.png" alt="Smpl">
+                        <h3>Smpl</h3>
+                    </a>
+                </div>
+                <div class="projects-item">
+                    <a href="projects.html#stack">
+                        <img src="img/project2.png" alt="Stack">
+                        <h3>Stack</h3>
+                    </a>
+                </div>
+                <div class="projects-item">
+                    <a href="projects.html#minecalc">
+                        <img src="img/project3.png" alt="Minecalc">
+                        <h3>Minecalc</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы или вы хотите обсудить проект, свяжитесь с нами:</p>
+            <p><a href="mailto:nalart.speaker@gmail.com">nalart.speaker@gmail.com</a></p>
+            <p>Telegram: <a href="https://t.me/MakeACakeStudios">@MakeACakeStudios</a> or <a href="https://t.me/MakeASupport_bot">@MakeASupport_bot</a></p>
+            <p>Наш GitHub: <a href="https://github.com/nalart11/MakeACake.site">MakeACake.site</a></p>
+            <!-- <form action="submit_form.php" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Номер телефона:</label>
+                <input type="phone" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Отправить</button>
+            </form> -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MakeACake Studios. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
